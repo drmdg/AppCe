@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Edu+SA+Beginner:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-bg-color: #2f2f2f;
+    --main-text-color: #ffcb74;
+    --sec-text-color: #f6f6f6;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    align-items: center;
+    gap: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    color: var(--main-text-color);
+    font-family: 'Alfa Slab One',Arial, Helvetica, sans-serif;
+
+}
+.logo{
+    font-size: 50px;
+
+}
+.card{
+    color: var(--main-bg-color);
+    height: 300px;
+    width: 250px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDescription button, .cardDescription input{
+    width: 60%;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    gap: 30px;
+    max-width: 80%;
+}
+
+.cardName{
+    width: 230px;
+    height: 150px;
+    font-family: 'Alfa Slab One',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+.formRow {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formRow input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+                /* MODAL INSERIR PRODUTO */
+
+
+.modalInserirProduto{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: large;
+    display: none;
+    flex-direction: column;
+    padding: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: #ffcb74;
+}
+#closeModalInserirProduto{
+    align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+
+}
+.modalInserirProduto button{
+    height: 30px;
+    width: 100px;
+    align-self: center;
+    border-radius: 1rem;
+}
+
+
+                /* MODAL REMOVER PRODUTO */
+
+.modalRemoverProduto{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: large;
+    display: none;
+    flex-direction: column;
+    padding: 50px;
+    height: 200px;
+    width: 400px;
+    background-color: #ffcb74;
+}
+
+#closeModalRmvProduto{
+    align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+.modalRemoverProduto button{
+    height: 30px;
+    width: 100px;
+    align-self: center;
+    border-radius: 1rem;
+}
+
+
+                /*  MODAL AUDITORIA  */
+
+
+.modalAuditoria{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: large;
+    display: none;
+    flex-direction: column;
+    padding: 50px;
+    height: 300px;
+    width: 400px;
+    background-color: #ffcb74;
+}
+                
+#closeModalAuditoria{
+    align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+.modalAuditoria button{
+    height: 30px;
+    width: 100px;
+    align-self: center;
+    border-radius: 1rem;
+}

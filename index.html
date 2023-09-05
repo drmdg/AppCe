@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Ce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <header>
+            <div class="logo">APP DF</div>
+            <ul>
+                <li id="estv">Estoque Virtual</li>
+                <li id="auditoria">Auditoria</li>
+                <li id="inserir">Inserir Produto</li>
+                <li id="edqnt">Editar Quantidade</li>
+                <li id="rmv">Remover Produto</li>
+                <li id="rep">Rep 30 Dias</li>
+                <li id="estz">Estoque Zerado</li>
+                <li id="extravio">Extravio</li>
+
+
+            </ul>
+        </header>
+
+        <main class="estoqueVirtual">
+         
+            <!-- <div class="card">
+                <div class="cardName">
+                    Nome do produto
+                </div>
+                <div class="cardDescription">
+                    <h2>Quantidade:</h2>
+                    <h2>Extravio:</h2>
+                    <h2>Reposição 30:</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardName">
+                    Nome do produto
+                </div>
+                <div class="cardDescription">
+                    <h2>Quantidade:</h2>
+                    <label for="novaquantidade">Nova Quantidade</label>
+                    <input type="number" name="novaquantidade">
+                    <button >Submit</button>
+                </div>
+            </div> -->
+           
+
+        </main>
+
+
+        <div class="modalInserirProduto">
+            <div id="closeModalInserirProduto"> X </div>
+            <div>
+                <div class="formRow">
+                    <label for="inputProduto">Produto:</label>
+                    <input type="text" name="inputProduto" id="inputProduto">
+                </div>
+                <div class="formRow">
+                    <label for="inputQuantidade">Quantidade:</label>
+                    <input type="number" name="inputQuantidade" id="inputQuantidade">
+                </div>
+                <div class="formRow">
+                    <label for="inputRep30">Rep 30:</label>
+                    <input type="number" name="inputRep30" id="inputRep30">
+                </div>
+                <div class="formRow">
+                    <button id="subInserirProd">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="modalRemoverProduto">
+            <div id="closeModalRmvProduto"> X </div>
+            <div>
+                <div class="formRow">
+                    <label for="inputRmvProduto">Produto:</label>
+                    <input type="text" name="inputRmvProduto" id="inputRmvProduto">
+                </div>
+                <div class="formRow">
+                    <button id="subRemoverProd">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="modalAuditoria">
+            <div id="closeModalAuditoria"> X </div>
+            <div>
+                <div class="formRow">
+                    <label for="inputAuditoriaProduto">Produto:</label>
+                    <input type="text" name="inputAuditoriaProduto" id="inputAuditoriaProduto">
+                </div>
+                <div class="formRow">
+                    <label for="inputAuditoriaQuantidade">Quantidade Auditada:</label>
+                    <input type="number" name="inputAuditoriaQuantidade" id="inputAuditoriaQuantidade">
+                </div>
+                <div class="formRow">
+                    <button id="subAuditoria">Submit</button>
+                </div>
+            </div>
+
+        </div>
+       
+
+
+    </div>
+
+
+    <script src="index.js" type="module"> </script>
+</body>
+</html>
